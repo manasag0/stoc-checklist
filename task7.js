@@ -1,3 +1,4 @@
+//break
 let fs = require("fs");
 let data = fs.readFileSync(0, 'utf-8');
 let idx = 0;
@@ -9,4 +10,11 @@ function readLine() {
 }
 
 let input = parseInt(readLine())
-console.log(input)
+
+for(let i = 0;i<input;i++){
+    let inputs = parseInt(readLine());
+    if (inputs == 42){
+        break
+    }
+    console.log(inputs)
+}
